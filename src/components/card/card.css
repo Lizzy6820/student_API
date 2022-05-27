@@ -1,0 +1,111 @@
+.student {
+    display: grid;
+    grid-template-columns: min-content 33% 1fr 1fr 1fr;
+    grid-template-rows: min-content, 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    "avatar name name name button"
+    "avatar info info . ."
+    ". info info . .";
+    padding: 16px;
+    border-bottom: 1px solid lightgrey;
+    width:100%;
+  }
+  
+  .avatar {
+    grid-area: avatar;
+    justify-self: center;
+    align-self: start;
+    border-radius: 50%;
+    border: 1px solid lightgrey;
+    width: 90px;
+    height: 90px;
+    position: static;
+    float: left;
+    padding: 10px;
+    margin:10px;
+  }
+  .name {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: "Raleway", sans-serif;
+   
+  }
+ 
+  .info {
+    font-family: "Raleway", sans-serif;
+    color:rgb(141, 131, 131);
+    line-height: 1.4;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+  
+  }
+  .info-box{
+    margin-left: 20px;
+    width:100%;
+  }
+  .grade-box{
+    margin-top: 10px;
+  }
+  .grades{
+  color:rgb(141, 131, 131);
+  line-height: 1.4;
+  margin-left: 15px;
+}
+
+.button-box{
+  margin-left: 72rem;
+}
+.button {
+  color: darkgray;
+  background-color: white;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;  
+  float: right;
+  font-family: "Raleway", sans-serif;
+  
+}
+.button:hover{
+  color: black;
+}
+.tag-form{
+  margin: 15px;
+}
+
+.tag-button{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  width: fit-content;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color:black;
+  background-color: lightgrey;
+  display:inline-block;
+}
+
+.tag {
+  padding-left: 10px;
+  padding-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background:white;
+  width: fit-content;
+}
+
+.tag:focus{
+  outline: none;
+  border-bottom: 1px solid black;
+} 
+
+.tag::placeholder{
+  color:lightgray;
+  font-family: "Raleway", sans-serif;
+}
